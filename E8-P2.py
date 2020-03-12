@@ -17,10 +17,10 @@ try:
     for i in order:
         if i in inputs:
             c = inputs.count(i)
-            indices = [j for j in range(len(inputs)) if inputs[j]==i]
+            indices = [j for j in range(len(inputs)) if inputs[j]==i]  #Gets a list of the indices that have the character "i"
             for index in indices:
-                result[index] = str(rank)
-            rank += len(indices)
+                result[index] = str(rank)  #Assigns all of them the same rank
+            rank += len(indices)  #Increments rank by the number of occurrences
 
     print(" ".join(result))
 except ValueError:
