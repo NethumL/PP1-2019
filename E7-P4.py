@@ -1,3 +1,5 @@
+"""Stepping numbers question"""
+
 try:
     p, q = map(int, input().split())  #Takes the inputs, converts them to integers, and assigns them to the variables
 
