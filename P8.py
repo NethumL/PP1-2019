@@ -10,24 +10,22 @@ try:
         matrix.append(row)
 
     #Finding maximin
-    maximin = 0
+    mins = []  #A list of the minimums in the rows
     for row in matrix:
-        maximin = max(maximin, min(row))  #Takes the larger of the current maximin and the minimum of the current row
+        mins.append(min(row))
+    maximin = max(mins)  #Gets the max of the row minimums
 
     #Finding minimax
-    maxes = []  #A list of the maxes in the columns
+    maxes = []  #A list of the maximums in the columns
     for i in range(c):
         column = [matrix[j][i] for j in range(r)]  #Gets the current column into a list
         maxes.append(max(column))
-    minimax = min(maxes)
+    minimax = min(maxes)  #Gets the min of the column maximums
 
     if minimax==maximin:
         state = "deterministic"
     else:
         state = "probabilistic"
-
-    print(maximin, minimax)
-    print(maxes)
 
     print("This games is", state)
 except ValueError:
