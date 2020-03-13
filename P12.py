@@ -31,7 +31,7 @@ try:
             print(" ".join(list(map(str, row))))  #Converts all to strings so that the join function will work
         if i<len(largest)-1:  #If there are more matrices to output, then this creates the new line to separate them
             print()
-except ValueError:
+except ValueError:  #If the input contains anything other than integers
     print("Input must only contain integers")
-except Exception:
+except Exception:  #If either the number of columns doesn't match, or if n is not larger than p
     print("Invalid input")
