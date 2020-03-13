@@ -1,3 +1,5 @@
+"""Adjacency matrix question"""
+
 try:
     n = int(input())
 

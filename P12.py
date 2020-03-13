@@ -1,3 +1,5 @@
+"""Largest sum of submatrices question"""
+
 try:
     #Getting the input
     n = int(input("Enter dimension: "))

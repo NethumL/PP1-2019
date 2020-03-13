@@ -1,3 +1,5 @@
+"""Encoding question"""
+
 try:
     #Generates and stores the alphabet into a list
     alphabet = [chr(i) for i in range(97, 123)]
