@@ -1,7 +1,7 @@
 """Isograms question"""
 
 try:
-    text = input()
+    text = input().lower()
 
     valid = False  #Whether the text is an isogram
     for char in text:
