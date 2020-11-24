@@ -1,5 +1,6 @@
 """Ranking question"""
 
+
 try:
     inputs = input().split()
 
@@ -10,7 +11,7 @@ try:
     #Generates the list of the characters in the order of precedence
     order = [chr(i) for i in range(97, 123)]
     num_order = [str(i) for i in range(10)]
-    order = order + num_order
+    order += num_order
 
     result = [""]*len(inputs)
     rank = 0

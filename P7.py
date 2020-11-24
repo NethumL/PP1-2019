@@ -1,5 +1,6 @@
 """Burrows-Wheeler Transformation"""
 
+
 try:
     #Getting the inputs
     text = input()
@@ -14,7 +15,7 @@ try:
 
     #Getting the permutations
     perm = [text]  #Initializes the list of permutations with the original
-    for i in range(len(text)-1):
+    for _ in range(len(text)-1):
         perm.append(perm[-1][-1] + perm[-1][:-1])  #Attaching the last character in the previous permutation to the beginning
 
     #Sorting the permutations
